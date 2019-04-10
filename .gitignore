@@ -36,6 +36,7 @@ assets/plugins/*
 !assets/plugins/msdlab_transfer_tools/
 wp-content/plugins/*
 !wp-content/plugins/msdlab-bespoke/
+!wp-content/plugins/msd-custom-cpt/
 
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
