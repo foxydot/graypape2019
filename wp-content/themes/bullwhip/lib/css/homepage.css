@@ -1,0 +1,262 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+/* Import Fonts
+------------------------------------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* Font Stacks */
+.opensans {
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+}
+.arial {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+/* Colors */
+/* Neutrals */
+/* Gradients */
+/* Buttons */
+.button:hover,
+.button:visited,
+.button a,
+.button a:hover,
+.button a:visited {
+  color: white;
+  text-decoration: none;
+}
+/* Column Classes
+------------------------------------------------------------ */
+.five-sixths,
+.four-fifths,
+.four-sixths,
+.one-fifth,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fifths,
+.three-fourths,
+.three-sixths,
+.two-fifths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+  float: left;
+  margin: 0 0 20px;
+  padding-left: 3%;
+}
+.one-half,
+.three-sixths,
+.two-fourths {
+  width: 48%;
+}
+.one-third,
+.two-sixths {
+  width: 31%;
+}
+.four-sixths,
+.two-thirds {
+  width: 65%;
+}
+.one-fourth {
+  width: 22.5%;
+}
+.three-fourths {
+  width: 73.5%;
+}
+.one-fifth {
+  width: 17.4%;
+}
+.two-fifths {
+  width: 37.8%;
+}
+.three-fifths {
+  width: 58.2%;
+}
+.four-fifths {
+  width: 78.6%;
+}
+.one-sixth {
+  width: 14%;
+}
+.five-sixths {
+  width: 82%;
+}
+.first {
+  clear: both;
+  margin-left: 0;
+  padding-left: 0;
+}
+/* Clears */
+.clearfix {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#inner {
+  display: none;
+}
+#hp-hero {
+  position: relative;
+}
+#hp-hero .carousel {
+  margin-bottom: 0;
+}
+#hp-hero .carousel .item {
+  height: 425px;
+}
+#hp-hero .carousel .item .carousel-caption {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+  color: #FFF;
+  min-height: 80px;
+  text-align: center;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+}
+#hp-hero .carousel .item .carousel-caption .sd2-slide-title-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 2.4em;
+  font-weight: bold;
+}
+#hp-hero .carousel .item .carousel-caption .sd2-slide-text {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#hp-hero .carousel .item .carousel-caption .sd2-slide-text p {
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+#hp-hero .carousel .carousel-control {
+  color: #FFF;
+  border: none;
+  background: none;
+  font-size: 300px;
+  height: 100px;
+}
+#hp-hero .carousel .carousel-control.right {
+  left: auto;
+  right: 50px;
+}
+#homepage-widgets {
+  border-top: 4px solid #3c351f;
+  background: #807041;
+  color: #FFF;
+}
+#homepage-widgets .wrap .widget {
+  float: left;
+  margin-right: 3%;
+  padding: 2em 0 6em;
+}
+#homepage-widgets .wrap .widget .widget-wrap {
+  position: relative;
+}
+#homepage-widgets .wrap .widget h4 {
+  color: #b7a570;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 1.4em;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+}
+#homepage-widgets .wrap .widget .post {
+  position: relative;
+  padding-bottom: 2em;
+}
+#homepage-widgets .wrap .widget .post a {
+  color: #FFF;
+}
+#homepage-widgets .wrap .widget .post a:hover {
+  color: #EAEAEA;
+}
+#homepage-widgets .wrap .widget .post h2 a {
+  color: #6F1A1D;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#homepage-widgets .wrap .widget .post h2 a:hover {
+  color: #6F1A1D;
+}
+#homepage-widgets .wrap .widget .post .more-link {
+  background: #6F1A1D;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 4px 1em;
+  color: #FFFFFF !important;
+  font-size: .75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 1em;
+  display: table;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  right: 1em;
+}
+#homepage-widgets .wrap .widget .more-from-category {
+  display: table;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+#homepage-widgets .wrap .widget .more-from-category a {
+  background: #6F1A1D;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 4px 1em;
+  color: #FFFFFF !important;
+  font-size: .75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 1em;
+}
+#homepage-widgets .wrap .widget.last-child {
+  margin-right: 0;
+}
+#homepage-widgets .wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media only screen and (max-width: 480px) {
+  #homepage-widgets .wrap .widget {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,127 @@
+@import 'elements';
+@import 'mixins';
+#inner {display: none;}
+#hp-hero{
+	position: relative;
+	.carousel{
+		margin-bottom: 0;
+    	.item {
+    		height: 425px;
+    		.carousel-caption{
+    			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+    			
+    			color: @white;
+    			min-height: 80px;
+    			text-align: center;
+    			.opensans;
+    			.sd2-slide-title-inner{
+    				max-width: 960px;
+    				margin: 0 auto;
+    				font-size: 2.4em;
+    				font-weight: bold;
+    			}
+    			.sd2-slide-text{
+    				max-width: 960px;
+    				margin: 0 auto;
+    				p{
+    					font-size: 1.6em;
+    					line-height: 1.2em;
+					}
+    			}
+    		}
+    	}
+    	.carousel-control{
+    		color: @white;
+    		border: none;
+    		background: none;
+    		font-size: 300px;
+    		height: 100px;
+    	}
+    	.carousel-control.right{
+    		left: auto;
+    		right: 50px;
+    	}
+	}
+}
+#homepage-widgets{
+	border-top: 4px solid @dkgreen;
+	background: @green;
+	color: @white;
+	.wrap{
+		.widget{
+			float: left;
+			margin-right: 3%;
+			padding: 2em 0 6em;
+			.widget-wrap{
+				position: relative;
+			}
+			.widget-wrap>div{
+			}
+			h4{
+				color:@ltgreen;
+				text-transform: none;
+				font-weight: normal;
+				font-size: 1.4em;
+				.opensans;
+			}
+			.post{
+			  position: relative;
+			  padding-bottom: 2em;
+			  a{
+			    color: @white;
+			  }
+			  a:hover{
+			    color: @ltgrey;
+			  }
+			  h2 a{
+  			  color: @red;
+  			  font-size: 1.2em;
+  			  font-weight: bold;
+  			}
+  			h2 a:hover{
+  			  color: @red;
+  			}
+        .more-link{
+          .button(@red);
+          display: table;
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+          right: 1em;
+        }
+  		}
+			
+			.more-from-category{
+				display: table;
+				position: absolute;
+				bottom: 0;
+				margin: 0;
+				width: 100%;
+				text-align: right;
+				a{
+				  .button(@red);
+				}
+			}
+		}
+		.widget.last-child {
+			margin-right: 0;
+		}
+	}
+	.wrap:after{
+		.clearfix;
+	}
+}
+@media only screen and (max-width : 480px) {  
+  #homepage-widgets .wrap .widget{
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+} 
